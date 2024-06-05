@@ -16,3 +16,8 @@ def test_get_education(teacher):
 
 def test_get_experience(teacher):
     assert teacher.get_experience() == 'test_experience'
+
+
+def test_set_experience(teacher):
+    assert teacher.set_experience("test_exp1")
+    assert teacher.teachers_dict['test_name'][1] == 'test_exp1'
