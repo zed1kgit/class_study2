@@ -16,3 +16,11 @@ def test_get_job_title(dis_teacher):
 def test_get_teacher_data(dis_teacher):
     assert dis_teacher.get_teacher_data() == ('test_name, образование test_education, опыт работы test_experience.\n'
                                               'Предмет test_discipline, должность test_job_tittle')
+
+
+def test_add_mark(dis_teacher):
+    assert dis_teacher.add_mark("test", "5") == 'test_name поставил оценку 5 студенту test.\nПредмет test_discipline'
+
+
+def test_remove_mark(dis_teacher):
+    assert dis_teacher.remove_mark("test", "5") == 'test_name удалил оценку 5 студенту test.\nПредмет test_discipline'
