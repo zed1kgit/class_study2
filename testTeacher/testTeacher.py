@@ -25,3 +25,11 @@ def test_set_experience(teacher):
 
 def test_get_teacher_data(teacher):
     assert teacher.get_teacher_data() == 'test_name, образование test_education, опыт работы test_experience'
+
+
+def test_add_mark(teacher):
+    assert teacher.add_mark("test", "5") == 'test_name поставил оценку 5 студенту test'
+
+
+def test_remove_mark(teacher):
+    assert teacher.remove_mark("test", "5") == 'test_name удалил оценку 5 студенту test'
