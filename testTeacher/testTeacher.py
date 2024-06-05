@@ -33,3 +33,7 @@ def test_add_mark(teacher):
 
 def test_remove_mark(teacher):
     assert teacher.remove_mark("test", "5") == 'test_name удалил оценку 5 студенту test'
+
+
+def test_give_a_consultation(teacher):
+    assert teacher.give_a_consultation('9В') == 'test_name провел консультацию в классе 9В'
