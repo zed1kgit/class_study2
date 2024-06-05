@@ -21,3 +21,7 @@ def test_get_experience(teacher):
 def test_set_experience(teacher):
     assert teacher.set_experience("test_exp1")
     assert teacher.teachers_dict['test_name'][1] == 'test_exp1'
+
+
+def test_get_teacher_data(teacher):
+    assert teacher.get_teacher_data() == 'test_name, образование test_education, опыт работы test_experience'
