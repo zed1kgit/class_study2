@@ -37,3 +37,8 @@ def test_remove_mark(teacher):
 
 def test_give_a_consultation(teacher):
     assert teacher.give_a_consultation('9В') == 'test_name провел консультацию в классе 9В'
+
+
+def test_fire_teacher(teacher):
+    assert teacher.fire_teacher() == 'Учитель test_name был уволен!'
+    assert teacher.fire_teacher() == 'Учителя test_name уже уволили!'
