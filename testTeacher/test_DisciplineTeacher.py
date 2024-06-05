@@ -13,6 +13,11 @@ def test_get_job_title(dis_teacher):
     assert dis_teacher.get_job_title() == 'test_job_tittle'
 
 
+def test_set_job_title(dis_teacher):
+    assert dis_teacher.set_job_title('test_job')
+    assert dis_teacher.get_job_title() == 'test_job'
+
+
 def test_get_teacher_data(dis_teacher):
     assert dis_teacher.get_teacher_data() == ('test_name, образование test_education, опыт работы test_experience.\n'
                                               'Предмет test_discipline, должность test_job_tittle')
